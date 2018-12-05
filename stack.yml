@@ -30,3 +30,12 @@ services:
     environment:
       POSTGRES_PASSWORD: example
     restart: always
+
+#  mariadb:
+#    image: mariadb:10.4
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: drupal
+#      MYSQL_USER: drupal
+#      MYSQL_PASSWORD: drupal
+#    restart: always

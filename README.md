@@ -35,3 +35,11 @@ Consider postgress credentials
 source: [docker-compose file](https://hub.docker.com/r/_/drupal/)
 
 e.g. stack.yml
+
+### Optional. Other Database engines
+
+After using PostgreSQL, I tried to use MySQL with no success 😞
+
+MariaDB can be used, I had to rename the service
+
+Postgres image is smaller 🗜️️, and configuration is faster ⚡ for development purposes
