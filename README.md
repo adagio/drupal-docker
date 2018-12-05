@@ -2,13 +2,13 @@
 
 ## Instructions
 
-### 1. Create directories for local development
+### 1. Directories for local development
 
-    mkdir shared
-    mkdir shared/drupal-sites
-    mkdir shared/drupal-modules
-    mkdir shared/drupal-themes
-    mkdir shared/drupal-profiles
+    shared
+    ├── drupal-sites
+    ├── drupal-modules
+    ├── drupal-themes
+    └── drupal-profiles
     
 ### 2. Permissions
 
@@ -16,9 +16,15 @@
 
 ### 2. Compose
 
-`docker-compose stack.yml up`
+`docker-compose -f stack.yml up`
 
 ### 3. Browse to localhost:8080
+
+    http://localhost:8080
+
+### 4. Drupal installation
+
+Consider postgress credentials
 
     Database type: PostgreSQL
     Database name: postgres
