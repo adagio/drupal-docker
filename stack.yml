@@ -17,14 +17,11 @@ services:
   drupal:
     image: drupal:8-apache
     ports:
-      - 8080:80
+      - 80:80
     volumes:
       - ./shared/drupal-modules:/var/www/html/modules
       - ./shared/drupal-profiles:/var/www/html/profiles
       - ./shared/drupal-themes:/var/www/html/themes
-      # this takes advantage of the feature in Docker that a new anonymous
-      # volume (which is what we're creating here) will be initialized with the
-      # existing content of the image at the same location
       - ./shared/drupal-sites:/var/www/html/sites
     restart: always
 
